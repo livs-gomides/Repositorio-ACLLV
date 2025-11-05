@@ -10,4 +10,4 @@ integrante 4:Leonardo Kenji
 integrante 5: Vinicius de Souza
 
 tecnologias utilizadas: …
-tipo de licença: uso livre ou privado”
+tipo de licença: uso livre
