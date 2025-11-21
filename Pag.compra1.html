@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produto - RTX 2060</title>
     <link rel="icon" type="image/x-icon" href="imagens/logo.png" />
+
+    <!-- CSS Globais -->
     <link rel="stylesheet" href="Css/Style.css" />
     <link rel="stylesheet" href="Css/header.css" />
     <link rel="stylesheet" href="Css/footer.css" />
     <link rel="stylesheet" href="Css/produtos.css" />
+
+    <!-- CSS da Página de Produto -->
+    <link rel="stylesheet" href="Css/produto.css" />
 </head>
 
 <body>
     <header class="header">
         <img src="imagens/logo.png" alt="Logo do site" width="120" height="120" />
+
         <form class="Search-bar">
             <input type="text" placeholder="Pesquisar..." />
             <button class="searchBtn" type="button">
@@ -22,21 +28,44 @@
         </form>
     </header>
 
-    <main class="produto-pagina" style="display:flex; gap:40px; padding:40px; color:white;">
-        <div class="img-box" style="max-width:400px;">
-            <img src="imagens/RTX2060.png" alt="RTX 2060" style="width:100%; border-radius:12px; border:2px solid #fb9815;" />
+    <main class="produto-pagina">
+        <!-- Imagem do produto -->
+        <div class="img-box">
+            <img src="imagens/RTX2060.png" alt="RTX 2060" />
         </div>
 
-        <div class="info-box" style="max-width:600px;">
-            <h1 style="color:#fb9815;">RTX 2060</h1>
-            <p style="font-size:20px; line-height:1.6;">
+        <!-- Informações do produto -->
+        <div class="info-box">
+            <h1>RTX 2060</h1>
+
+            <p>
                 A NVIDIA GeForce RTX 2060 oferece desempenho incrível para jogos em 1080p e 1440p,
                 com ray tracing em tempo real e tecnologia DLSS, garantindo qualidade superior em gráficos.
             </p>
 
-            <p class="preco" style="font-size:28px; color:#fb9815; font-weight:bold; margin-top:20px;">R$ 1.149,90</p>
+            <p class="preco">R$ 1.149,90</p>
 
-            <button class="btnComprar" style="margin-top:10px;">Comprar</button>
+            <button class="btnComprar">Comprar</button>
+
+            <!-- Avaliações -->
+            <section class="avaliacoes">
+                <h2>Avaliações</h2>
+
+                <div class="review">
+                    <strong>João Silva ⭐⭐⭐⭐⭐</strong>
+                    <p>Produto excelente, desempenho incrível pelo preço. Recomendo!</p>
+                </div>
+
+                <div class="review">
+                    <strong>Mariana Costa ⭐⭐⭐⭐✰</strong>
+                    <p>Cumpre bem o que promete, chegou rápido e muito bem embalado.</p>
+                </div>
+
+                <div class="review">
+                    <strong>Carlos Pereira ⭐⭐⭐⭐⭐</strong>
+                    <p>Qualidade impecável, melhor compra que fiz este ano.</p>
+                </div>
+            </section>
         </div>
     </main>
 
