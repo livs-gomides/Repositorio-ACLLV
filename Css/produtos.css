@@ -42,6 +42,9 @@
     color: black;
     font-weight: bold;
     transition: 0.2s;
+     display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btnComprar:hover {
