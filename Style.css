@@ -65,8 +65,10 @@ body {
 
 .produtos {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-left: 60px;
 }
 
 .produto {
