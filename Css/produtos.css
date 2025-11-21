@@ -1,0 +1,49 @@
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.produto {
+    background-color: #001022;
+    border: 2px solid #fb9815;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fb9815;
+}
+
+.btnComprar {
+    background-color: #fb9815;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btnComprar:hover {
+    background-color: #ffad38;
+}
