@@ -1,9 +1,9 @@
 .produtos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap:10px;
     padding: 20px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .produto {
