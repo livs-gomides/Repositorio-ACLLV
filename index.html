@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XP Max</title>
-    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
-    <link rel="Stylesheet" href="Css/Style.css">
-    <link rel="Stylesheet" href="Css/header.css">
-    <link rel="Stylesheet" href="Css/footer.css">
-    <link rel="Stylesheet" href="Css/produtos.css">
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png" />
+    <link rel="stylesheet" href="Css/Style.css" />
+    <link rel="stylesheet" href="Css/header.css" />
+    <link rel="stylesheet" href="Css/footer.css" />
+    <link rel="stylesheet" href="Css/produtos.css" />
 </head>
+
 <body>
     <header class="header">
-        <img src="imagens/logo.png" rel="Logo do site" width="120px" height="120px">
+        <img src="imagens/logo.png" alt="Logo do site" width="120" height="120" />
         <form class="Search-bar">
-        <input type="text" placeholder="Pesquisar...">
-        <button class="searchBtn">
-        <img src="imagens/searchBar.png" width="80px" height="80px">
-        </button>
+            <input type="text" placeholder="Pesquisar..." />
+            <button class="searchBtn" type="button">
+                <img src="imagens/searchBar.png" alt="Pesquisar" width="80" height="80" />
+            </button>
         </form>
     </header>
-        <div class="produtos">
-            <div class="produto">
-            <img src="imagens/RTX2060.png">
-            <h2>RTX 2060</h2>
-            <p class="preco">R$ 1149,90</p>
-            <button class="btnComprar">Comprar</button>
-            </div>
 
-            <div class="produto">
-            <img src="imagens/memoriaRam.webp">
-            <h2>16GB Memoria Ram</h2>
-            <p class="preco">R$ 355,00</p>
-            <button class="btnComprar">Comprar</button>
+    <!-- CARROSSEL (estrutura HTML) -->
+    <section class="carrossel-produtos" aria-label="Carrossel de produtos">
+        <!-- setas (opcional) só com HTML: âncoras apontando pros ids -->
+        <a class="carrossel-btn prev" href="#p6" aria-label="Produto anterior">❮</a>
+        <a class="carrossel-btn next" href="#p2" aria-label="Próximo produto">❯</a>
 
-            </div>
-            <div class="produto">
-            <img src="imagens/ASUS-PRIME0B550.jpg">
-            <h2>ASUS PRIME B550</h2>
-            <p class="preco">R$ 759,90</p>
-            <button class="btnComprar">Comprar</button>
-            </div>
+        <div class="carrossel-track">
+            <article class="produto" id="p1">
+                <img src="imagens/RTX2060.png" alt="RTX 2060" />
+                <h2>RTX 2060</h2>
+                <p class="preco">R$ 1149,90</p>
+                <button class="btnComprar">Comprar</button>
+            </article>
 
-                                   </div>
-            <div class="produto">
-            <img src="imagens/Ryzen 7 7800X.webp">
-            <h2>Processador AMD Ryzen 7 7800X3D</h2>
-            <p class="preco">R$ 2.399,99</p>
-            <button class="btnComprar">Comprar</button>
-            </div>
+            <article class="produto" id="p2">
+                <img src="imagens/memoriaRam.webp" alt="16GB Memória RAM" />
+                <h2>16GB Memoria Ram</h2>
+                <p class="preco">R$ 355,00</p>
+                <button class="btnComprar">Comprar</button>
+            </article>
 
-                                               </div>
-            <div class="produto">
-            <img src="imagens/gabinete.webp">
-            <h2>Gabinete Kalkan Midgard</h2>
-            <p class="preco">R$ 199,99</p>
-            <button class="btnComprar">Comprar</button>
-            </div>
+            <article class="produto" id="p3">
+                <img src="imagens/ASUS-PRIME0B550.jpg" alt="ASUS PRIME B550" />
+                <h2>ASUS PRIME B550</h2>
+                <p class="preco">R$ 759,90</p>
+                <button class="btnComprar">Comprar</button>
+            </article>
 
-                        <div class="produto">
-            <img src="imagens/monitor.webp">
-            <h2>Monitor Gamer Curvo LG UltraGear 34"</h2>
-            <p class="preco">R$ 1.899,99</p>
-            <button class="btnComprar">Comprar</button>
-            </div>
+            <article class="produto" id="p4">
+                <img src="imagens/Ryzen 7 7800X.webp" alt="AMD Ryzen 7 7800X3D" />
+                <h2>Processador AMD Ryzen 7 7800X3D</h2>
+                <p class="preco">R$ 2.399,99</p>
+                <button class="btnComprar">Comprar</button>
+            </article>
 
+            <article class="produto" id="p5">
+                <img src="imagens/gabinete.webp" alt="Gabinete Kalkan Midgard" />
+                <h2>Gabinete Kalkan Midgard</h2>
+                <p class="preco">R$ 199,99</p>
+                <button class="btnComprar">Comprar</button>
+            </article>
+
+            <article class="produto" id="p6">
+                <img src="imagens/monitor.webp" alt="Monitor Gamer Curvo LG UltraGear 34 polegadas" />
+                <h2>Monitor Gamer Curvo LG UltraGear 34"</h2>
+                <p class="preco">R$ 1.899,99</p>
+                <button class="btnComprar">Comprar</button>
+            </article>
         </div>
+    </section>
+
     <footer class="footer">
-    <p>XP Max © 2025</p>
-    <p>MIT License — livia</p>
-    <p>Todos os direitos reservados</p>
+        <p>XP Max © 2025</p>
+        <p>MIT License — livia</p>
+        <p>Todos os direitos reservados</p>
     </footer>
-
-
-    
 </body>
 </html>

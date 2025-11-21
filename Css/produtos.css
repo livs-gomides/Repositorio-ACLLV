@@ -47,3 +47,44 @@
 .btnComprar:hover {
     background-color: #ffad38;
 }
+
+.carrossel-produtos {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 10px 40px; /* espaço pras setas */
+}
+
+.carrossel-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.carrossel-track .produto {
+  min-width: 260px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-size: 28px;
+  background: #111;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  opacity: 0.8;
+}
+.carrossel-btn.prev { left: 5px; }
+.carrossel-btn.next { right: 5px; }
