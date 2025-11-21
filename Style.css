@@ -1,6 +1,9 @@
 body {
     background-color: #000d1dec;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -106,4 +109,16 @@ body {
 
 .btnComprar:hover {
     background-color: #ffad38;
+}
+
+.footer {
+    margin-top: auto; /* empurra o footer para baixo */
+    background-color: #000c1b;
+    color: #fb9815;
+    display: flex;
+    justify-content: space-between; /* deixa o conteúdo horizontal */
+    align-items: center;
+    padding: 15px 30px;
+    border-top: 2px solid #fb9815;
+    font-size: 18px;
 }
