@@ -1,17 +1,12 @@
 /*Layout Página de Produto */
 
 .produto-pagina {
-    display: flex;
-    gap: 40px;
-    padding: 40px;
-    color: white;
-}
-
-.img-box img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
+    background-color: #001022;
     border: 2px solid #fb9815;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    color: white;
 }
 
 .info-box h1 {
@@ -30,4 +25,13 @@
     color: #fb9815;
     font-weight: bold;
     margin-top: 20px;
+}
+
+.ReviewBlock {
+    background-color: #001022;
+    border: 2px solid #fb9815;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    color: white;
 }
