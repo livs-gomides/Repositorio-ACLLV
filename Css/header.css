@@ -43,14 +43,6 @@
 
 /* animação de hover */
 .searchBtn:hover img {
-    animation: lupaJump 0.4s ease;
+    transform: translateY(-5px);
 }
 
-/* keyframes do pulo */
-@keyframes lupaJump {
-    0% { transform: translateY(0); }
-    30% { transform: translateY(-12px); }
-    60% { transform: translateY(0); }
-    80% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
-}
