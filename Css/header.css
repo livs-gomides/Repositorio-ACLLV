@@ -26,6 +26,7 @@
     font-size: 18px; /* tamanho da letra */
     padding: 8px;   /* espaço interno */
     border-radius: 50px; /* opcional, deixa arredondado */
+    border-color: #fb9815;
 }
 
 .searchBtn {
