@@ -8,8 +8,8 @@
 }
 
 .img-box img {
-    width: 100%;
-    max-width: 400px;
+    width: 50%;
+    max-width: 200px;
     border-radius: 12px;
     border: 2px solid #fb9815;
 }
@@ -32,7 +32,9 @@
     margin-top: 20px;
 }
 
+
 /* === Botão Comprar === */
+
 .btnComprar {
     background-color: #fb9815;
     border: none;
@@ -46,5 +48,5 @@
 }
 
 .btnComprar:hover {
-    background-color: #ffad38;
+    background-color: #ffad38;
 }
